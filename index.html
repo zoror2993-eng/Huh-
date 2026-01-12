@@ -1,0 +1,64 @@
+   <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorry Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #dc2626;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 5px 0 15px;
+      color: #374151;
+    }
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+    button {
+      padding: 8px 14px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <h1>Am Really Sorry</h1>
+  <p>Pass hint: Mera Dusra name ka female version</p>
+  
+  <div>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pwd = document.getElementById('password').value.trim().toLowerCase();
+      if (pwd === "priyanshi") {
+        alert("Am really sorry , agar tum soch rahi ho ki tumne mereko hurt kiya hai to nhi ye galat h , mere ko bas kuch feelings aa gayi thi , and ab tum Baat bhi na karo to i will feel the same 🙂");
+      } else {
+        alert("Galat password, dobara try karo.");
+      }
+    }
+  </script>
+</body>
+</html>
