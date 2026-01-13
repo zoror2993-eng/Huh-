@@ -68,5 +68,16 @@
       }
     }
   </script>
+   <script>
+  window.onload = function() {
+    let pwd = prompt("Enter Password\nHint: Spelling thik karne pe jo bolti thi");
+    if (pwd && pwd.trim().toLowerCase() === "master") {
+      alert("Welcome Varenya 🌸");
+    } else {
+      alert("Galat password. Page access denied.");
+      document.body.innerHTML = "<h2 style='color:red; text-align:center;'>Access Denied</h2>";
+    }
+  };
+   </script>
 </body>
 </html>
